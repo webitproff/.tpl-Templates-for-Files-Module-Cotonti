@@ -101,8 +101,8 @@
           </div>
           <!-- BEGIN: STANDALONE_FOOTER -->
           <div class="card mt-4 mb-4">
-            <div class="card-body"> {PHP.R.files_icon_pastethumb} {PHP.L.files_pastethumb} {PHP.R.files_icon_pasteimage} {PHP.L.files_pasteimage} {PHP.R.files_icon_pastefile} {PHP.L.files_pastefile} <p class="text-danger"></p>
-              <small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-danger bg-danger bg-opacity-10 border border-danger border-opacity-10 rounded-2">(требуется доработать)</small>
+            <div class="card-body"> {PHP.R.files_icon_pastethumb} {PHP.L.files_pastethumb} {PHP.R.files_icon_pasteimage} {PHP.L.files_pasteimage} {PHP.R.files_icon_pastefile} {PHP.L.files_pastefile} 
+<p class="text-danger"><small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-danger bg-danger bg-opacity-10 border border-danger border-opacity-10 rounded-2">(требуется доработать)</small></p>
             </div>
           </div>
         </div>
