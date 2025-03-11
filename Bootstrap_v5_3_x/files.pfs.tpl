@@ -8,7 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Добавлен viewport для адаптивности -->
     <base href="{PHP.cfg.mainurl}/">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> {PFS_HEAD} <script type="text/javascript">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet"> 
+	{PFS_HEAD} 
+	<script type="text/javascript">
       //
       < ![CDATA[{
             PFS_HEADER_JAVASCRIPT
@@ -190,9 +192,21 @@
         <!-- BEGIN: STANDALONE_FOOTER -->
         <div class="container">
           <div class="card mt-4 mb-4">
-            <div class="card-body"> {PHP.R.files_icon_pastethumb} {PHP.L.files_pastethumb} {PHP.R.files_icon_pasteimage} {PHP.L.files_pasteimage} {PHP.R.files_icon_pastefile} {PHP.L.files_pastefile} </div>
+            <div class="card-body"> {PHP.R.files_icon_pastethumb} {PHP.L.files_pastethumb} {PHP.R.files_icon_pasteimage} {PHP.L.files_pasteimage} {PHP.R.files_icon_pastefile} {PHP.L.files_pastefile} 
+			<p><small class="d-inline-flex mb-3 px-2 py-1 fw-semibold text-danger bg-danger bg-opacity-10 border border-danger border-opacity-10 rounded-2">(требуется доработать)</small></p>
+			</div>
           </div>
         </div>
+        <!-- IF {PHP.usr.maingrp} == 5 OR {PHP.usr.isadmin} -->
+        <div class="container mt-4 mb-4">
+          <div class="alert alert-warning" role="alert">
+            <p>
+              <span class="fw-bold">{PHP.usr.profile.user_name}</span>, you are using the template <code>files.pfs.tpl</code>
+              <a href="https://abuyfile.com/forums/cotonti/original/mod-files" class="alert-link">Help and support</a> for the <span class="fw-bold">"Files"</span> module.
+            </p>
+          </div>
+        </div>
+        <!-- ENDIF -->
       </div>
     </div> 
 	{FOOTER_RC}
