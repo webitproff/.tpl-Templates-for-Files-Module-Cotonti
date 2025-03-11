@@ -23,7 +23,9 @@
       <div class="uk-container ">
         <div class="standalone">
           <!-- END: STANDALONE_HEADER -->
+		  <div class="uk-card uk-card-default uk-card-body uk-card-small uk-border-rounded uk-margin-bottom">
           <ul class="uk-breadcrumb"> {BREADCRUMBS} </ul>
+		  </div>
           <h1 class="uk-heading-small uk-margin-medium-bottom">{PAGE_TITLE}</h1> 
 		  {FILE "{PHP.cfg.themes_dir}/{PHP.cfg.defaulttheme}/warnings.tpl"}
           <!-- BEGIN: FORM -->
@@ -93,7 +95,12 @@
           </div>
           <!-- BEGIN: STANDALONE_FOOTER -->
           <div class="uk-margin">
-            <div class="uk-card uk-card-default uk-card-body"> {PHP.R.files_icon_pastethumb} {PHP.L.files_pastethumb} {PHP.R.files_icon_pasteimage} {PHP.L.files_pasteimage} {PHP.R.files_icon_pastefile} {PHP.L.files_pastefile} 
+            <div class="uk-card uk-card-default uk-card-body"> 
+				<ul class="uk-list uk-list-divider">
+					<li>{PHP.R.files_pfs_link_addthumb} {PHP.R.files_icon_pastethumb} {PHP.L.files_pastethumb}</li>
+					<li>{PHP.R.files_pfs_link_addpix} {PHP.R.files_icon_pasteimage} {PHP.L.files_pasteimage} </li>
+					<li>{PHP.R.files_pfs_link_addfile} {PHP.R.files_icon_pastefile} {PHP.L.files_pastefile}</li>
+				</ul>		
 				<div class="uk-alert-danger" uk-alert>
                 <a href class="uk-alert-close" uk-close></a>
                 <p>(требуется доработать)</p>
@@ -112,7 +119,8 @@
         </div>
       </div>
       <!-- ENDIF -->
-    </div> {FOOTER_RC}
+    </div> 
+	{FOOTER_RC}
   </body>
 </html>
 <!-- END: STANDALONE_FOOTER -->
