@@ -6,8 +6,8 @@
         <li class="uk-width-1-1 uk-width-3-4@m">
             <div class="uk-cover-container">
                 <canvas width="640" height="420"></canvas>
-                <a href="{FILES_ROW_URL}" data-caption="{PAGE_SHORTTITLE} {FILES_ROW_TITLE} - {FILES_ROW_FILENAME}" alt="{FILES_ROW_TITLE}">
-                    <img uk-cover src="{FILES_ROW|cot_filesThumbnailUrl($this,1153,420,'outbound')}" alt="{FILES_ROW_TITLE} - {FILES_ROW_FILENAME}" title="{FILES_ROW_TITLE} - {FILES_ROW_FILENAME}" />
+                <a href="{FILES_ROW_URL}" data-caption="{FILES_ROW_TITLE}" alt="{FILES_ROW_TITLE}">
+                    <img uk-cover src="{FILES_ROW|cot_filesThumbnailUrl($this,1153,420,'outbound')}" alt="{FILES_ROW_TITLE}" title="{FILES_ROW_TITLE}" />
                 </a>
                 <div class="uk-position-small uk-position-bottom-center uk-panel"><span class="uk-icon-button uk-button-primary">{FILES_ROW_NUM} </span></div>
             </div>
